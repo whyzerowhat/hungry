@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    	<meta name="format-detection" content="telephone=no, email=no"/>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="main">
+			<!--浮层信息-->
+			<div class="floatPar" id="floatPar">
+				<div class="posFloat"></div>
+				<div class="floatCont">
+					<ul class="thePost">
+						<div id="postPay" class="postPay">
+							<span style="font-size: 0.7rem;"></span>
+						</div>
+						<li class="detaHd">
+							<img src="images/10000001.png" alt="goods" class="detaImg" />
+						</li>
+						<li class="clearfix detaInt">
+							<div class="fl footDeta">
+								<p>来货架找我</p>
+								 <p>我在<span class="context">挂层</span>哟</p>
+							</div>
+							<div class="fr" id="floatAdd">
+                                <input type="hidden" class="floatTarg"><!--识别标识-->
+                                <input type="hidden" class="floatPay"><!--单价-->
+                                <input type="hidden" class="floatNum"><!--现在数量-->
+                                <input type="hidden" class="floatDis"><!--描述-->
+                                <input type="hidden" class="floatId"><!--商品ID-->
+								<img src="img/Shopping_Cart.png" alt="car" class="detailImg" />
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--商品结算详情浮层信息-->
+			<div class="floatPar" id="floatFot">
+				<div class="posFloat"></div>
+				<div class="floatFot">
+					<h3 class="clearfix footBar">
+						<p class="fl footGood">已选商品</p>
+						<p class="fr footGood1" id="empty">清空</p>
+					</h3>
+					<ul id="listFt">
+						<!--<li class="clearfix detaInt">
+							<div class="fl">
+								
+							</div>
+							<div class="fr">
+								<span>4.3</span>
+								<i>-</i>
+								<span>1</span>
+								<i>+</i>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<!--弹出的是否确认清空-->
+			<div class="floatSure" id="floatSure">
+				<div class="posSure"></div>
+				<div class="sureCont">
+					<p class="clearCar">清空购物车？</p>
+					<p id="youSure">
+						<button class="btnIf">确认</button>
+						<button class="btnIf">取消</button>
+					</p>
+				</div>
+			</div>
+				<div class="absoluteHd">
+					<ul class="headTit">
+						<li class="goodDis active">货架</li>
+						<li class="goodDis">冷柜</li>
+					</ul>
+					<div class="listAll" id="cliSh">
+						<p>层数</p>
+						<ul class="headTit1" id="headFloor">
+							<li class="lineArray act"><a href="#goods" class="floorCl">挂层</a></li>
+							<li class="lineArray act"><a href="#onefloor" class="floorCl">一层</a></li>
+							<li class="lineArray act"><a href="#twofloor" class="floorCl">二层</a></li>
+							<li class="lineArray act"><a href="#threefloor" class="floorCl">三层</a></li>
+							<li class="lineArray act"><a href="#fourfloor" class="floorCl">四层</a></li>
+							<li class="lineArray act"><a href="#fivefloor" class="floorCl">五层</a></li>
+
+							<li class="lineArray act1"><a href="#goods1" class="floorCl">挂层</a></li>
+							<li class="lineArray act1"><a href="#onefloor1" class="floorCl">一层</a></li>
+							<li class="lineArray act1"><a href="#twofloor1" class="floorCl">二层</a></li>
+							<li class="lineArray act1"><a href="#threefloor1" class="floorCl">三层</a></li>
+							<li class="lineArray act1"><a href="#fourfloor1" class="floorCl">四层</a></li>
+							<li class="lineArray act1"><a href="#fivefloor1" class="floorCl">五层</a></li>
+					   </ul>
+					</div>
+				</div>
+			<div class="goods">
+				<ul id="shelves">
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">挂层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="goods" class="delegate">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">一层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="onefloor" class="delegate">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">二层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="twofloor" class="delegate">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">三层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="threefloor" class="delegate">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">四层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="fourfloor" class="delegate">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">五层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="fivefloor" class="delegate">
+
+						</ul>
+					</li>
+				</ul>
+				<ul id="freeze" class="freeze">
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">挂层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="goods1" class="delegate1">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">一层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="onefloor1" class="delegate1">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">二层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="twofloor1" class="delegate1">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">三层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="threefloor1" class="delegate1">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">四层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="fourfloor1" class="delegate1">
+
+						</ul>
+					</li>
+					<li>
+						<div class="conCen">
+							<span class="dashLine"></span>
+							<p class="lineBar">五层</p>
+							<span class="dashLine"></span>
+						</div>
+						<!--货架-->
+						<ul style="margin-top:-10rem;padding-top: 10rem;margin-bottom: 0.3rem;" id="fivefloor1" class="delegate1">
+
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<span class="balance" id="balance">
+				<span class="balanceNum" id="balanceNum">0</span>
+				<img src="img/Shopping_Cart_01.png" alt="car" class="balanceImg"/>
+			</span>
+			<ul class="clearfix">
+				<li class="fl balancePay">
+					<span id="theMoney">￥0.00</span>
+				</li>
+				<li class="fr">
+					<span class="goPay" id="goPay">去结算</span>
+				</li>
+			</ul>
+		</div>
+		<script>
+//            var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
+//            function show(){
+//                document.getElementsByTagName('body')[0].innerHTML = '目前仅支持微信扫码购买';
+//				document.getElementsByTagName('body')[0].style.textAlign = 'center';
+//                return;
+//            }
+//            if (!isWeixinBrowser) {
+//                show()
+//            }
+		</script>
+		<script src="js/rem.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<!--<script src="js/lazyload.js"></script>-->
+		<script src="js/index.js"></script>
+		<script>
+
+		</script>
+	</body>
+</html>
